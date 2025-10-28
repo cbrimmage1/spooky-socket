@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  /*background image c/o of Vecteezy
+  https://static.vecteezy.com/system/resources/previews/054/663/354/non_2x/the-seamless-gray-pixel-background-with-brick-vector.jpg*/
+
+  background-image: url("pixel-bricks.jpg");
+  overflow: hidden;
+}
+
+/*"Bloody Font" by James Fordyce
+https://www.dafont.com/bloody.font?text=Hello+cuties&back=theme
+*/
+@font-face {
+  font-family: bloodyFont;
+  src: url(BLOODY.TTF);
+}
+
+h1 {
+  font-family: bloodyFont;
+  color: rgba(145, 0, 0, 0.875);
+  font-size: 8rem;
+  text-align: center;
+  justify-content: center;
+  position: absolute;
+  top: 30%;
+  left: 25%;
+}
+
+h3 {
+  font-family: bloodyFont;
+  color: rgba(145, 0, 0, 0.875);
+  font-size: 3rem;
+  position: fixed;
+  transform: rotate(10deg);
+  left: 82%;
+  top: 10%;
+}
+
+#flashlight {
+  height: 100%;
+  width: 100%;
+  --x: 50vw;
+  --y: 50vh;
+  background: radial-gradient(circle at var(--x) var(--y), transparent 0px, black 150px);
+  position: absolute;
+  z-index: 1;
+  cursor: none;
+}
+
+#web {
+  position: fixed;
+  top: -17rem;
+  left: -9rem;
+  width: 50%;
+}
+
+/* floating animation referenced from https://www.geeksforgeeks.org/css/css-floating-animation/  */
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+#spider {
+  position: fixed;
+  width: 15%;
+  animation: float 2s ease-in-out infinite;
+}
+
+.hands {
+  position: fixed;
+  width: 100px;
+  opacity: 0.80;
+}
+
+#hand-1 {
+    transform: rotate(-45deg);
+    top: 10rem;
+    left: 25rem;
+}
+
+#hand-2 {
+    transform: rotate(20deg);
+    top: 30rem;
+    left: 60rem;
+}
+
+#hand-3 {
+    transform: rotate(-20deg);
+    top: 3rem;
+    left: 30rem;
+}
+
+#hand-4 {
+    transform: rotate(20deg);
+    top: 15rem;
+    left: 70rem;
+}
+
+#hand-5 {
+    transform: rotate(-20deg);
+    top: 35rem;
+}
