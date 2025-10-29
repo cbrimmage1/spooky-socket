@@ -40,6 +40,7 @@ h3 {
   top: 10%;
 }
 
+/* flashlight effect referenced from https://www.youtube.com/watch?v=vePNEQMzmC4*/
 #flashlight {
   height: 100%;
   width: 100%;
@@ -50,6 +51,7 @@ h3 {
   z-index: 1;
   cursor: none;
 }
+
 
 #web {
   position: fixed;
